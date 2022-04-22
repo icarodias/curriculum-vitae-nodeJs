@@ -1,0 +1,202 @@
+/* DEFINITIONS */
+:root{
+    /* Pallet was gotten at https://colorhunt.co*/
+    --color-details:#066163;
+    --color-dark:#383838;
+    --color-light:#CDBE78;
+    --color-background:#F4F4F4;
+
+    --width-personal:40vw;
+}
+/* Default Properties*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* DEFINITIONS OF FONTS */
+html{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.container{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    
+    
+}
+/* PERSONAL INFOS */
+.personal{
+    width:var(--width-personal);
+    height:100%;
+    background-color:var(--color-dark);
+}
+
+.personal-image{
+    width:auto;
+    height:40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-image .image{
+    width:100%;
+    height:100%;
+    background-image: url("./assets/personal-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    filter:saturate(50%);
+    clip-path: circle(8.6rem);
+}
+.personal-infos{
+    width:auto;
+    height:60vh;
+    padding: 0 2.6rem 2.6rem 2.6rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.personal-infos h2{
+    font-weight: 300;
+    color:var(--color-light);
+    margin-bottom:1rem;
+}
+
+.personal-infos p{
+    color:var(--color-background);
+}
+
+
+.info a, .info span{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:var(--color-background);
+    
+
+}
+
+.info img{
+    width: 24px;
+    height:auto;
+    margin-top:0.2rem;
+    margin-right: 1rem;
+}
+.icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.tech-icons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tech-icons img{
+    width: 20%;
+}
+
+
+
+
+/* EXPERIENCES */
+.study-work{
+    width:calc(100vw - var(--width-personal));
+    height:100vh;
+    background-color: var(--color-background);
+    
+}
+
+.study-work h2{
+    font-weight: 300;
+    color:var(--color-dark);
+    /* BORDER BEFORE NAME */
+    width:fit-content;
+    line-height: 1.5;
+    border-bottom: solid 1px var(--color-background);
+}
+
+.header{
+    height:20vh;
+    padding:2rem;
+    display: flex;
+    align-items:flex-end;
+    
+}
+
+.header h1{
+    font-size: 3.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-bottom: solid 1.6px #CDBE78;
+    color:var(--color-dark);
+    /* BORDER BEFORE NAME */
+    width:fit-content;
+    line-height: 1.5;
+    border-bottom: solid 1px var(--color-light);
+}
+
+.objectives{
+    height:15vh;
+    background-color: var(--color-background);
+    padding: 0 2rem 2rem 2rem;
+    
+}
+.studies{
+    height:25vh;
+    background-color: var(--color-background);
+    padding: 2rem 2rem 2rem 2rem;
+
+}
+.experiences{
+    height:35vh;
+    background-color: var(--color-background);
+    padding: 2rem 2rem 2rem 2rem;
+}
+.time-line{
+    position: relative;
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+/* line of time-line  */
+/* .time-points::after{
+    position: absolute;
+    content:'';
+    width:2px;
+    height: 95%;
+    background:linear-gradient(var(--color-light),var(--color-light)); 
+    left:0.95rem;
+
+
+} */
+.time-points{
+    padding: 1rem 0 0 2rem ;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.time-point::before{
+    position: absolute;    
+    content:'';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-light);
+    align-items: center;
+    transform: translate(-21px, 8px);
+}
