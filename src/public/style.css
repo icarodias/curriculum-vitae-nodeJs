@@ -6,7 +6,7 @@
     --color-light:#CDBE78;
     --color-background:#F4F4F4;
 
-    --width-personal:40vw;
+    --width-personal:325px;
 }
 /* Default Properties*/
 *{
@@ -35,30 +35,30 @@ html{
 
 .personal-image{
     width:auto;
-    height:40vh;
-    
+    height:30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .personal-image .image{
-    width:100%;
+    width:263px;
     height:100%;
     background-image: url("./assets/personal-image.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     filter:saturate(50%);
-    clip-path: circle(8.6rem);
+    clip-path: circle(7rem);
 }
 .personal-infos{
     width:auto;
-    height:60vh;
-    padding: 0 2.6rem 2.6rem 2.6rem;
+    height:70vh;
+    padding: 0 2.6rem 4rem 2rem;
+    
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -89,7 +89,7 @@ html{
     margin-right: 1rem;
 }
 .icons{
-    width: 100%;
+    width: 275px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -107,9 +107,7 @@ html{
 }
 
 
-
-
-/* EXPERIENCES */
+/* STUDY AND WORK */
 .study-work{
     width:calc(100vw - var(--width-personal));
     height:100vh;
@@ -120,10 +118,6 @@ html{
 .study-work h2{
     font-weight: 300;
     color:var(--color-dark);
-    /* BORDER BEFORE NAME */
-    width:fit-content;
-    line-height: 1.5;
-    border-bottom: solid 1px var(--color-background);
 }
 
 .header{
@@ -131,14 +125,12 @@ html{
     padding:2rem;
     display: flex;
     align-items:flex-end;
-    
 }
 
 .header h1{
     font-size: 3.9rem;
     font-weight: 400;
     line-height: 1.5;
-    border-bottom: solid 1.6px #CDBE78;
     color:var(--color-dark);
     /* BORDER BEFORE NAME */
     width:fit-content;
@@ -147,50 +139,32 @@ html{
 }
 
 .objectives{
-    height:15vh;
-    background-color: var(--color-background);
+    height:14vh;
     padding: 0 2rem 2rem 2rem;
     
 }
+.experiences{
+    height:40vh;    
+    padding: 1rem 2rem 2rem 2rem;
+}
 .studies{
     height:25vh;
-    background-color: var(--color-background);
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
 
 }
-.experiences{
-    height:35vh;
-    background-color: var(--color-background);
-    padding: 2rem 2rem 2rem 2rem;
-}
-.time-line{
+.line{
     position: relative;
     height: 100%;
-    padding: 1rem 0;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
 }
-/* line of time-line  */
-/* .time-points::after{
-    position: absolute;
-    content:'';
-    width:2px;
-    height: 95%;
-    background:linear-gradient(var(--color-light),var(--color-light)); 
-    left:0.95rem;
 
-
-} */
-.time-points{
-    padding: 1rem 0 0 2rem ;
+.points{
+    padding: 0.5rem 0 1rem 2rem ;
     height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
 }
 
-.time-point::before{
+.point::before{
     position: absolute;    
     content:'';
     width: 10px;
