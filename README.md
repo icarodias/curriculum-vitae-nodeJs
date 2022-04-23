@@ -1,7 +1,7 @@
 # Curriculum Vitae em PDF usando o NodeJS 
 ## Este projeto nasceu devido a três motivos:
 
-|<ul> <li align="justify">Preciso desenvolver projetos que tenham sentido para mim, vi a criação de um PDF de um curriculum vitae(CV) uma boa oportunidade de criar um layout e implementar os conhecimentos em HTML, CSS e NodeJs.</li><li align="justify">Poder criar um modelo para quem quiser usar ou se basear para fazer seu própio CV.</li><li align="justify"> Poder de fato usar esse CV par-a me candidatar em alguma  vaga de interesse. O layout deste CV foi feito em HTML e CSS, você pode ver na pasta public os arquivos index.html e style.css.</li></ul>|<img src="./CV-resultado.png" width=1300><br><sub>Resultado desta aplicação</sub>| 
+|<ul> <li align="justify">Preciso desenvolver projetos que tenham sentido para mim, vi a criação de um PDF de um curriculum vitae(CV) uma boa oportunidade de criar um layout e implementar os conhecimentos em HTML, CSS e NodeJs.</li><li align="justify">Poder criar um modelo para quem quiser usar ou se basear para fazer seu própio CV.</li><li align="justify"> Poder de fato usar esse CV para me candidatar em alguma  vaga de interesse. O layout deste CV foi feito em HTML e CSS, você pode ver na pasta public os arquivos index.html e style.css.</li></ul>|<img src="./CV-resultado.png" width=1300><br><sub>Resultado desta aplicação</sub>| 
 | :---: | :---: | 
 
 ---
