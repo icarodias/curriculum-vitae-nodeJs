@@ -1,0 +1,158 @@
+/* DEFINITIONS */
+:root{
+    /* Pallet was gotten at https://colorhunt.co*/
+    --color-details:#066163;
+    --color-dark:#383838;
+    --color-light:#CDBE78;
+    --color-background:#F4F4F4;
+
+    --width-personal:325px;
+}
+/* Default Properties*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* DEFINITIONS OF FONTS */
+html{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h2{
+    font-weight: 300;
+}
+/* GENERAL CONTENT  */
+.content{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    background-color:var(--color-background);
+}
+
+/* PERSONAL  */
+#personal{
+    width:275px;
+    height: 100%;
+
+    color:var(--color-background);
+    background-color:var(--color-dark);
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.personal-card{
+    /* background-color: var(--color-details); */
+    height:auto;
+    width:100%;
+}
+.card-content.image{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.card-content.cover{
+    background-color: var(--color-background);
+    clip-path: circle(108px);
+}
+.card-content.image img{
+    width: 240px;
+    filter:saturate(55%);
+    clip-path: circle(106px);   
+}
+
+.personal-card h2{
+    color:var(--color-light);
+    margin-bottom: 0.75rem;
+}
+
+.personal-card a,.personal-card p{
+    text-decoration: none;
+    color:var(--color-background);
+
+    display:flex;
+    align-items: center;
+    gap:0.75rem;
+}
+
+.card-content.icons{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img{
+    width:25%;
+}
+
+/* WORK AND STUDY */
+
+#work-study{
+    height:100%;
+    width: auto;
+    padding:2rem;
+    color:var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+header{
+    height:auto;
+    font-size: 32px;
+    margin-bottom: 2rem;
+
+}
+
+header h1{
+    font-size: 3.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* BORDER BEFORE NAME */
+    width:fit-content;
+    line-height: 1.5;
+    border-bottom: solid 1px var(--color-light);
+}
+main{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:2rem;
+}
+
+section h2{
+    margin-bottom:1.5rem;
+}
+
+.section-content.items{
+    margin-left: 16px;
+
+}
+.item::before{
+    position: absolute;    
+    content:'';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--color-light);
+    transform: translate(-15px, 8px);
+}
+
+.item{
+    margin-bottom: 1rem;
+
+}
