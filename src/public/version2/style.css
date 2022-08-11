@@ -71,6 +71,12 @@ h2{
     color:var(--color-light);
     margin-bottom: 0.75rem;
 }
+.card-content.contact img{
+    width:24px;
+    height:24px;
+}
+
+
 
 .personal-card a,.personal-card p{
     text-decoration: none;
