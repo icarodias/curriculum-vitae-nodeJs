@@ -18,6 +18,7 @@
 html{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    font-size: 15px;
 }
 .container{
     height:100vh;
@@ -28,6 +29,7 @@ html{
 }
 /* PERSONAL INFOS */
 .personal{
+    font-size: 16px;
     width:var(--width-personal);
     height:100%;
     background-color:var(--color-dark);
@@ -122,7 +124,7 @@ html{
 
 .header{
     height:20vh;
-    padding:2rem;
+    padding: 1rem 1rem;
     display: flex;
     align-items:flex-end;
 }
@@ -139,17 +141,29 @@ html{
 }
 
 .objectives{
-    height:14vh;
-    padding: 0 2rem 2rem 2rem;
+    /* height:14vh; */
+    padding: 0 1rem 1rem 1rem;
     
 }
 .experiences{
-    height:40vh;    
-    padding: 1rem 2rem 2rem 2rem;
+
+    /* height:40vh;     */
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.skills{
+    /* height:40vh;     */
+    padding: 0rem 1rem 1rem 1rem;
+}
+.two-columns{
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    gap: 2.5rem;
 }
 .studies{
     height:25vh;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0rem 1rem 1rem 1rem;
 
 }
 .line{
@@ -160,8 +174,9 @@ html{
 }
 
 .points{
-    padding: 0.5rem 0 1rem 2rem ;
+    padding: 0rem 0 1rem 2rem ;
     height: 100%;
+    justify-content: baseline;
 }
 
 .point::before{

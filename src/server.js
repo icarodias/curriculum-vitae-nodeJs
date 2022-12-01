@@ -8,7 +8,7 @@ const app = express();
 
 // SEND A STATIC PAGE
 
-app.use(express.static(path.join(__dirname+'/public/version2')))
+app.use(express.static(path.join(__dirname+'/public/version1')))
 
 
 app.get('/pdf', async(request,response)=>{
